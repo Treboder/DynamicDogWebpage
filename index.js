@@ -1,5 +1,5 @@
 // js health check
-document.getElementById("demo").innerHTML = "Healt check says: JavaScript is working!";
+document.getElementById("demo").innerHTML = "Health check says: JavaScript is working!";
 
 // API call
 function callAPI() {
