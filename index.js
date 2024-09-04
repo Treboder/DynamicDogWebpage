@@ -1,5 +1,7 @@
+// js health check
 document.getElementById("demo").innerHTML = "JavaScript is working!";
 
+// API call
 function callAPI() {
     // Make an API request
     fetch('https://dog.ceo/api/breeds/image/random')
