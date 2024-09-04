@@ -14,3 +14,9 @@ function callAPI() {
             console.error('Error:', error);
         });
 }
+
+function addimage() {
+    var img = new Image();
+    img.src = "https://images.dog.ceo/breeds/setter-irish/n02100877_602.jpg"
+    img_home.appendChild(img);
+}
