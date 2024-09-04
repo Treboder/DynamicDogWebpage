@@ -1,16 +1,25 @@
-// js health check
-document.getElementById("demo").innerHTML = "JavaScript is working!";
+<!DOCTYPE html>
+<html lang="en">
 
-// API call
-function callAPI() {
-    // Make an API request
-    fetch('https://dog.ceo/api/breeds/image/random')
-        .then(response => response.json())
-        .then(data => {
-            // Display the result
-            document.getElementById('result').innerHTML = JSON.stringify(data);
-        })
-        .catch(error => {
-            console.error('Error:', error);
-        });
-}
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DynamicDogWebpage</title>
+</head>
+
+<body>
+
+<!-- Title section with js health check-->
+<h1>Welcome to DynamicDogWebpage</h1>
+<p id="demo">This is a paragraph.</p>
+
+<hr>
+
+<!-- API call section -->
+<h3>JavaScript API Example</h3>
+<p><button onclick="callAPI()">Call API</button></p>
+<div id="result"></div>
+  
+<script src="index.js"></script>
+</body>  
+</html>
